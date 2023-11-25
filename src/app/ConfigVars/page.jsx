@@ -34,7 +34,7 @@ const ConfigVars = () => {
         <section className=" space-y-3 " >
           <div className="flex space-x-5 items-center " >
             <Image src={'/wrench.png'} width={40} height={30} alt="config_icon" />
-            <h1 className="text-4xl font-semibold">Config Vars</h1>
+            <h1 className="text-3xl font-semibold">Config Vars</h1>
           </div>
         </section>
 

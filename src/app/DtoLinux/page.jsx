@@ -23,7 +23,7 @@ const DeployToLinux = () => {
       {/* // Section for the page title */}
         <section className=" space-y-3 " >
           <div className="flex space-x-5 " >
-            <Image src={'/penguin.png'} width={40} height={25} alt="penguin_icon" />
+            <Image src={'/penguin.png'} width={40} height={20} alt="penguin_icon" />
             <p className="text-3xl font-semibold" >Deploy to Linux</p>
           </div>
         </section>

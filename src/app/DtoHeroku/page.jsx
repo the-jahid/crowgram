@@ -34,7 +34,7 @@ const DeployToHeroku = () => {
         <section className=" space-y-3 " >
           <div className="flex space-x-5 items-center " >
             <Image src={'/cloud.png'} width={40} height={30} />
-            <p className="text-4xl font-semibold" >Deploy to Heroku</p>
+            <p className="text-3xl font-semibold" >Deploy to Heroku</p>
           </div>
         </section>
 
