@@ -33,7 +33,7 @@ const ConfigVars = () => {
         {/* Header section */}
         <section className=" space-y-3 " >
           <div className="flex space-x-5 " >
-            <Image src={'/wrench.png'} width={40} height={30} alt="config_icon" />
+            <Image src={'/wrench.png'} width={40} height={25} alt="config_icon" />
             <h1 className="text-4xl font-semibold">Config Vars</h1>
           </div>
         </section>

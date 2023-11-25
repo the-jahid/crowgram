@@ -20,7 +20,7 @@ export default function Home() {
         {/* // Header section */}
         <section className=" space-y-3 " >
             <div className="flex space-x-5" >
-                <Image src={'/robot.png'} width={40} height={24} alt="robot_icon" />
+                <Image src={'/robot.png'} width={40} height={25} alt="robot_icon" />
                 <h1 className="text-3xl font-semibold" >Crowgram</h1>
             </div>
             <p className="text-xl" >Crowgram is a powerful, advanced, multi-featured Telegram userbot.</p>
