@@ -19,8 +19,8 @@ export default function Home() {
     <main className="w-full min-h-screen flex flex-col space-y-10 justify-center  text-white bg-black p-5  md:p-10 ">
         {/* // Header section */}
         <section className=" space-y-3 " >
-            <div className="flex space-x-5" >
-                <Image src={'/robot.png'} width={40} height={25} alt="robot_icon" />
+            <div className="flex space-x-5 items-center " >
+                <Image src={'/robot.png'} width={40} height={30} alt="robot_icon" />
                 <h1 className="text-3xl font-semibold" >Crowgram</h1>
             </div>
             <p className="text-xl" >Crowgram is a powerful, advanced, multi-featured Telegram userbot.</p>
