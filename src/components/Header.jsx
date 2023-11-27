@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
    // Header element with styling and structure
-   <header className="z-30 flex  fixed top-0 bg-black h-[10vh] text-white  p-5 items-center border-b border-b-gray-100 w-full">
+   <header className="z-30 flex  fixed top-0 bg-custom-black h-[10vh] text-white  p-5 items-center border-b border-b-gray-100 w-full">
         {/* // Navigation section */}
         <nav className="flex items-center space-x-3">
             {/* // Button to toggle sidebar */}
@@ -24,8 +24,8 @@ const Header = () => {
                 <FaAlignLeft width={24} height={24} />
             </button>
             {/* // Logo section */}
-            <div className="bg-gray-100">
-                <Image src={'/crowgram_logo.png'} width={40} height={40} alt="crowgram_logo" />
+            <div className="bg-gray-100 rounded-md w-[40px] h-[40px] ">
+                <Image src={'/crowgram_logo.png'} className="rounded" width={40} height={40} alt="crowgram_logo" />
             </div>
             {/* // Site title */}
             <h1 className="font-bold sm:text-xl md:text-2xl">Crowgram</h1>

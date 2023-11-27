@@ -51,12 +51,12 @@ const NavList = () => {
   
 
   return (
-    <nav className="h-full bg-black py-4 w-full " >
+    <nav className="h-full bg-custom-black py-4 w-full " >
         <ul className="flex flex-col text-white space-y-4 " >
             {/* Map through the navlistText array and create list items */}
             {navlistText.map((item) =>  item.navtitle.length === 0 ? 
             <div key={item.id} className=" cursor-pointer p-1 flex space-x-2 rounded-lg hover:bg-gray-700" >
-                <Image src={item.navheaderLinktexticon} width={25} height={20} alt="icon" />
+                <Image src={item.navheaderLinktexticon} width={25} height={20} alt="icon"  />
                 <Link href={'/'} ><p className={`text-md ${pathname === '/' && 'text-blue-500' }  `} >{item.navheaderLinktext}</p></Link>
             </div> : 
             <div key={item.id}>

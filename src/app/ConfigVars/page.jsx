@@ -1,11 +1,14 @@
 'use client'
 // Importing necessary modules and components
+
 import InfoBox from "@/components/InfoBox"
 import Image from "next/image"
 import { configvartext } from "./configvarsText"
 import PrevNextBox from "@/components/PrevNextBox"
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+
+
 
 // ConfigVars component
 const ConfigVars = () => {
@@ -28,7 +31,7 @@ const ConfigVars = () => {
 
   // Return the JSX for rendering
   return (
-    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-black p-5  md:p-10 space-y-10  ">
+    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-custom-black p-5  md:p-10 space-y-10  ">
    
         {/* Header section */}
         <section className=" space-y-3 " >
@@ -45,8 +48,8 @@ const ConfigVars = () => {
         <section className="space-y-5" >
           <h2 className="text-3xl font-semibold">Crowgram Variables</h2>
           <p>The variables mentioned below are required to deploy Crowgram. There are some required variables that must be given mandatory values; otherwise, Crowgram will not be able to run.</p>
-          <div className="bg-gray-900 p-4 " >
-            <p>
+          <div className="bg-slate-700 p-4 " >
+            <p className="font-jetBrains" >
               api_id <br />
               api_hash <br />
               string <br />

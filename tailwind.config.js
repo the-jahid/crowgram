@@ -17,6 +17,9 @@ module.exports = {
       },
       borderWidth: {
         'custom-border': '0.2px',
+      },
+      fontFamily: {
+        'jetBrains': ['JetBrains Mono', 'monospace']
       }
     },
   },

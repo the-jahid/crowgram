@@ -29,7 +29,7 @@ const DeployToHeroku = () => {
 
   // Component return
   return (
-    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-black p-5  md:p-10 space-y-10   ">
+    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-custom-black p-5  md:p-10 space-y-10   ">
      
         <section className=" space-y-3 " >
           <div className="flex space-x-5 items-center " >
@@ -51,7 +51,7 @@ const DeployToHeroku = () => {
         <section className="space-y-5" >
           <p className="text-3xl font-semibold " >Deployment</p>
           <p>To deploy Crowgram, it is necessary to know about the variables mentioned below. Detailed information about these variables is available in the variables section.</p>
-          <div className="bg-gray-900 p-4 " >
+          <div className="bg-slate-700 p-4 font-jetBrains " >
            
               api_id <br />
               api_hash <br />
@@ -80,9 +80,9 @@ const DeployToHeroku = () => {
         </section>
 
         {/* // More InfoBox components with props */}
-        <InfoBox logoicon={<CiCircleCheck size={25} color="#239B56 "  />} borderleftColor='#239B56 ' text="Recommend: We request that you fork Crowgram's GitHub repository so your deployed version will be protected." />
+        <InfoBox logoicon={<CiCircleCheck size={25} color="#239B56 "  />} borderleftColor='#239B56 ' text="Now you click on the More button on the upper right, go to View logs, and see that Crowgram Started has appeared." />
 
-        <InfoBox logoicon={<IoIosInformationCircleOutline size={25} color="#F4D03F "  />} borderleftColor='#F4D03F ' text="Recommend: We request that you fork Crowgram's GitHub repository so your deployed version will be protected." />
+        <InfoBox logoicon={<IoIosInformationCircleOutline size={25} color="#F4D03F "  />} borderleftColor='#F4D03F ' text="After deploying Crowgram, the >sethelper command must be given in any chat, or the Help Menu will not work." />
 
         <p>Congratulations! You have successfully deployed Crowgram to Heroku using the Deploy to Heroku button.</p>
 

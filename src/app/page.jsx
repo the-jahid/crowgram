@@ -16,7 +16,7 @@ export default function Home() {
     
   return (
     // Main section
-    <main className="w-full min-h-screen flex flex-col space-y-10 justify-center  text-white bg-black p-5  md:p-10 ">
+    <main className="w-full min-h-screen flex flex-col space-y-10 justify-center  text-white bg-custom-black p-5  md:p-10 ">
         {/* // Header section */}
         <section className=" space-y-3 " >
             <div className="flex space-x-5 items-center " >
@@ -31,7 +31,7 @@ export default function Home() {
         {/* // About Crowgram section */}
         <section className="space-y-5 " id="aboutCrowgram" > 
             <h2 className="text-3xl font-semibold " >About Crowgram</h2>
-            <article className="border-l-4 border-gray-200 bg-gray-900 p-4 rounded " >
+            <article className="border-l-4 border-gray-200 bg-slate-700 p-4 rounded " >
                 <p>Crowgram is an open-source Telegram userbot developed by the Python programming language and Telethon MTProto, a client library of the Telegram API, a secure and reliable way to interact with the Telegram platform.</p>
             </article>
         </section>

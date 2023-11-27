@@ -19,7 +19,7 @@ const DeployToLinux = () => {
 
     // Render the DeployToLinux page
   return (
-    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-black p-5  md:p-10 space-y-10">
+    <main className="w-full min-h-screen flex flex-col justify-center  text-white bg-custom-black p-5  md:p-10 space-y-10">
       {/* // Section for the page title */}
         <section className=" space-y-3 " >
           <div className="flex space-x-5 " >
@@ -40,7 +40,7 @@ const DeployToLinux = () => {
           <p className="text-3xl font-semibold " >Prerequisites</p>
           <p>To deploy Crowgram, it is necessary to know about the variables mentioned below. Detailed information about these variables is available in the variables section.</p>
 
-          <div className="bg-gray-900 p-4">
+          <div className="bg-slate-700 p-4  font-jetBrains">
             <p>
               api_id <br />
               api_hash <br />
@@ -63,7 +63,7 @@ const DeployToLinux = () => {
             <p className="text-3xl font-semibold " >Automatic Process</p>
             <p>The easiest and our recommended process to install Crowgram is to run the following command in your Linux terminal in your desired directory.</p>
 
-            <section className="bg-gray-900 p-4 w-full ">
+            <section className="bg-slate-700 p-4 w-full font-jetBrains ">
               <p className="break-all">
                 <code>
                   {"curl -s https://raw.githubusercontent.com/iniridwanul/Crowgram/master/crowgram.sh > install.sh && bash install.sh && rm install.sh"}
@@ -96,9 +96,9 @@ const DeployToLinux = () => {
             <div className="space-y-3" >
               <p className="text-green-500 font-semibold text-xl " > Navigate to the Crowgram Directory</p>
               <p>Export the environment variables using the values you gathered in the prerequisites step. You can set them in the <span className="bg-gray-500 rounded-md mr-2 ">.env  </span> file provided with the repository:</p>
-              <div className="bg-gray-900 p-4" >
-                <p >
-                  <code className="break-all space-y-2 " >
+              <div className="bg-slate-700 p-4" >
+                <p className="font-jetBrains">
+                  <code className="break-all space-y-2 font-jetBrains " >
                     {"echo \"api_id=YOUR_API_ID\" >> .env"}<br />
                     {"echo \"api_hash=YOUR_API_HASH\" >> .env"}<br />
                     {"echo \"string=YOUR_SESSION_STRING\" >> .env"}<br />
@@ -113,8 +113,11 @@ const DeployToLinux = () => {
                     {"echo \"mention_log_location=YOUR_MENTION_LOG_LOCATION\" >> .env"}
                   </code>
                 </p>
+                
               </div>
+             
             </div>
+            <div>Replace <span className="bg-gray-500 p-2 rounded" >YOUR_XXX</span> with the respective values.</div>
 
             <article className="space-y-3" >
               <p className="text-green-500 font-semibold text-xl " > Install Dependencies and start Crowgram</p>

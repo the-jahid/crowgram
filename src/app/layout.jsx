@@ -1,11 +1,11 @@
 // Importing necessary modules and components
-import { JetBrains_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import NavList from '@/components/NavList'
 
 // Setting up JetBrains_Mono font with latin subset
-const inter = JetBrains_Mono({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 // Metadata for the application
 export const metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <main className=' flex h-[100vh]'>
           <Header /> {/* Header component */}
-          <aside className=' border-r border-white hidden  md:block fixed top-[10vh] w-[300px] h-full  px-4  bg-black ' >
+          <aside className=' border-r border-white hidden  md:block fixed top-[10vh] w-[300px] h-full  px-4  bg-custom-black ' >
             <NavList /> {/* Navigation List component */}
           </aside> 
           <div className=' z-10 w-full md:ml-[300px] relative top-[10vh]  ' >
